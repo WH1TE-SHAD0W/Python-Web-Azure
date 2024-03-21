@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/simpleQuiz.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script/main.js"></script>
+    <script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js”
+            integrity=”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl”
+            crossorigin=”anonymous”>
+    </script>
+    <script src="../script/main.js"></script>
+</head>
+
+
+<body>
+<header>
+    <?php
+    @include 'layouts/header.html'
+    ?>
+</header>
+<main><h1 class="title-labeling">Simple quiz</h1>
+    <div class="containerInQuiz">
+        <form action="/myapp/action_page.htmle.html" onsubmit="setLocalStorage()">
+            <div id="question">
+                <label for="devopsGoal">1. What is the primary goal of DevOps?</label>
+                <div id="options">
+                    <select id="devopsGoal" name="devopsGoal">
+                        <option value="Speeding up software development without collaboration">Speeding up software development without collaboration</option>
+                        <option value="Collaboration between Development and Operations teams">Collaboration between Development and Operations teams</option>
+                        <option value="Eliminating the need for automated testing">Eliminating the need for automated testing</option>
+                        <option value="Focusing solely on infrastructure management">Focusing solely on infrastructure management</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label>2. Which practices are associated with DevOps? (Select all that apply)</label><br>
+                <input type="checkbox" id="practices1" value="Continuous Integration" name="practices1">
+                <label for="practices1">Continuous Integration</label><br>
+                <input type="checkbox" id="practices2" value="Waterfall Model" name="practices2">
+                <label for="practices2">Waterfall Model</label><br>
+                <input type="checkbox" id="practices3" value="Agile Methodology" name="practices3">
+                <label for="practices3">Agile Methodology</label><br>
+                <input type="checkbox" id="practices4" value="Kanban" name="practices4">
+                <label for="practices4">Kanban</label><br>
+                <input type="checkbox" id="practices5" value="Continuous Deployment" name="practices5">
+                <label for="practices5">Continuous Deployment</label><br>
+            </div>
+            <div>
+                <label>3. Which tool is commonly used for containerization in DevOps?</label><br>
+                <label for="tool1">Puppet</label>
+                <input type="radio" id="tool1" name="tool" value="Puppet"><br>
+                <label for="tool2">Ansible</label>
+                <input type="radio" id="tool2" name="tool" value="Ansible"><br>
+                <label for="tool3">Docker</label>
+                <input type="radio" id="tool3" name="tool" value="Docker"><br>
+                <label for="tool4">Kubernetes</label>
+                <input type="radio" id="tool4" name="tool" value="Kubernetes"><br>
+                <label for="tool5">Vagrant</label>
+                <input type="radio" id="tool5" name="tool" value="Vagrant"><br>
+            </div>
+            <div>
+                <label for="stageCount">4. How many stages are there in a typical CI/CD pipeline?</label><br>
+                <input type="number" id="stageCount" pattern="[\d]{1}" title="write down just one digit"><br>
+            </div>
+            <div>
+                <label for="creationOfDevops">5. When did the term 'DevOps' first emerge?</label><br>
+                <input type="date" id="creationOfDevops"><br>
+            </div>
+            <div>
+                <label for="cloudService">6. Which cloud service provider is often associated with DevOps? (just write down the company)</label><br>
+                <input type="text" id="cloudService"><br>
+            </div>
+            <div>
+                <label for="successColor">7. Choose a color that represents success in DevOps:</label><br>
+                <input type="color" id="successColor"><br>
+            </div>
+            <div>
+                <label for="moto">8. What is the password of DevOps</label><br>
+                <input type="password" name="moto" id="moto" pattern="[A-Z]{4}" title="Hint: It's a 4letter long acronym">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+<footer>
+    <?php
+    @include 'layouts/footer.html'
+    ?>
+</footer>
+
+</body>
+</html>

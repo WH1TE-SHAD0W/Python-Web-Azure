@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+
+<body onload="displayResult()">
+<header>
+    <div>
+        <?php
+        @include 'layouts/header.html'
+        ?>
+    </div>
+</header>
+<main>
+    <div class="container-vertical">
+        <div class="title-labeling" style="padding-top: 1em">Results</div>
+        <div class="explanation" style="padding: 1em" id="resultsText">nothing</div>
+        <div style="max-width: 12em" class="container">
+            <a href="simpleQuiz.php">
+                <button class="button-28" role="button">Back to quiz</button>
+            </a>
+        </div>
+    </div>
+</main>
+<footer>
+    <?php
+    @include 'layouts/footer.html'
+    ?>
+</footer>
+
+</body>
+</html>

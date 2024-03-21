@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/introduction.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+
+<body>
+<header>
+    <div>
+        <?php
+        @include 'layouts/header.html'
+        ?>
+    </div>
+</header>
+<main>
+    <h1 class="title-labeling">Monolithic vs Agile development</h1>
+    <div class="container">
+        <p class="description" style="padding-top: 2em">
+            Monolithic approach makes is a single unit software architecture.
+            Able to use only sequential development.
+            While agile approach of software architecture breaks every sevtion apart and makes it modular.
+            This is allowing the system to be fastly developed with better maintence and freqent updates.
+            Every service is controlled by microservice manager.
+            Such services are usually installed seperatelly and together makes one functional aplication.
+        </p>
+        <img src="../static/img/Microservices-vs-Monolithic-Architecture-Advantages-and-Disadvantages-1.png" alt="Microservices">
+    </div>
+    <div class="title-labeling">DevOps is not a thing it’s a collaboration of developing software and operating it. </div>
+    <div class="container">
+        <div class="col-md-6">
+            <img src="../static/img/Devops-toolchain.svg" alt="Microservices">
+        </div>
+        <div class="col-md-6">
+            <p class="description" style="padding-top: 2em">core principles:
+                Collaboration: Encouraging open communication and teamwork among cross-functional teams.
+                Automation: Harnessing the power of automation to streamline workflows, reducing manual intervention and errors.
+                Continuous Integration and Deployment: Enabling a continuous and automated pipeline for integrating code changes and deploying them swiftly.
+                Monitoring and Feedback: Constantly monitoring systems, gathering feedback, and leveraging insights for continuous improvement.
+                The motto or guiding principle of DevOps often revolves around the concept of "Culture, Automation, Measurement, and Sharing," commonly referred to by the acronym "CAMS."
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <?php
+        @include 'layouts/footer.html'
+        ?>
+    </div>
+</footer>
+
+</body>
+</html>

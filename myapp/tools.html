@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+
+<body>
+<header>
+    <div>
+        <?php
+        @include 'layouts/header.html'
+        ?>
+    </div>
+</header>
+<main>
+    <div id="tools">
+        <div class="row">
+            <h1 class="title-labeling">Development Phase</h1>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p class="description">
+                        1. Version Control => Git: Tracks changes in source code, enabling collaboration and version management.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/Git-logo.svg" alt="Git logo">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <img src="../static/img/old-logo-no-bkgrd.png" alt="GitLabLogo">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">2. Continuous Integration (CI):
+                        Jenkins, GitLab CI/CD, CircleCI: Automates the build, test, and integration of code changes.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p class="description">3. Containerization: Docker, Podman: Packages applications and their dependencies
+                        into containers for consistency across environments.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/Docker-Logo-700x394.png" alt="Docker">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="title-labeling">Testing Phase</h1>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <img src="../static/img/Jenkins_logo_with_title.svg" alt="Jenkins">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">1. Automated Testing: Selenium, JUnit, Jest: Automates various types of testing
+                        like functional, unit, and integration tests.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p class="description">2. Static Code Analysis: SonarQube, ESLint, Pylint: Analyzes code for potential
+                        bugs, security vulnerabilities, and code quality issues.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/sonarQube.jpg" alt="SonarQube">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="title-labeling">Deployment and Operations Phase:Deployment and Operations Phase</h1>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <img src="../static/img/Ansible_logo.svg" alt="Ansible">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">1. Configuration Management: Ansible, Chef, Puppet: Automates configuration and
+                        management of infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p class="description">2. Orchestration:
+                        Kubernetes, Docker Swarm: Manages containerized applications, scaling, and load balancing.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/Kubernetes-Logo.png" alt="Kubernetes">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <img src="../static/img/prometheus-original-wordmark.svg" alt="Prometeus">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">3.  Monitoring and Logging: Prometheus, ELK Stack (Elasticsearch, Logstash,
+                        Kibana): Monitors system performance, logs, and provides visibility into the infrastructure</p>
+                </div>
+            </div>
+            <div class="col-md-12" >
+                <div class="col-md-6">
+                    <p class="description">4. Infrastructure as Code (IaC):
+                        Terraform, AWS CloudFormation: Allows infrastructure provisioning and management through code.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/Aws-Logo-PNG@zeevector.com_.png" alt="Amazon Web Service">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="title-labeling">Collaboration and Communication:</h1>
+            <div class="col-md-12">
+                <div class="col-md-6" >
+                    <img src="../static/img/Slack-logo-500x281.png" alt="Slack">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">1. Communication Tools:
+                        Slack, Microsoft Teams: Facilitates real-time communication and collaboration among teams.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <p class="description">2. Project Management: Jira, Trello, Asana: Helps in tracking tasks,
+                        managing projects, and facilitating agile methodologies.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../static/img/Jira-icon-blue.svg" alt="Jira">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="title-labeling">Continuous Delivery (CD) and Deployment:</h1>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <img src="../static/img/argo-header-logo-2da8b7ad32cb8a36d97f570496546fca.png" alt="Argo">
+                </div>
+                <div class="col-md-6">
+                    <p class="description">
+                        Continuous Delivery/Deployment (CD): Spinnaker, ArgoCD: Automates and manages the release
+                        process, allowing for continuous delivery and deployment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <?php
+        @include 'layouts/footer.html'
+        ?>
+    </div>
+</footer>
+
+</body>
+</html>

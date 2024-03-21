@@ -1,0 +1,30 @@
+{% extends "layout.html.j2" %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block main %}
+    <div class="devOpsLoop">
+        <div class="row">
+            <h1 class="title-labeling">What DevOps really is???</h1>
+        </div>
+        <div class="front-image-home" >
+            <img style="" src="../static/img/DevOpsLoop.jpeg" alt="devOps Loop" >
+        </div>
+        <div class="row">
+            <p class="explanation">Dev - Ops is a software development approach, where development and IT collaborates to create continous updates and automation of deployment. </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container" style="padding-bottom: 2em">
+            <div class="col-md-4">
+                <a href="../myapp/tools.html"><button class="button-28" role="button">Tools</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="../myapp/introduction.html"><button class="button-28" role="button">Introduction</button></a>
+            </div>
+            <div class="col-md-4">
+                <a href="../myapp/devopsEngineerJob.html"><button class="button-28" role="button">Jobs</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
